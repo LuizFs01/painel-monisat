@@ -1,0 +1,7 @@
+{
+  "name": "painel",
+  "private": true,
+  "dependencies": {
+    "bootstrap-icons": "^1.10.5"
+  }
+}
