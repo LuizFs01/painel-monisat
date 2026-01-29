@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="https://site.monisat.com.br/modules/gestor2/assets/images/favicon.png">
+
+    <title>Regra / Mercadoria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid d-flex justify-content-between">
+            <a class="navbar-brand text-white" href="../index.html"><img src="../logo.png" alt="Logo Monisat"></a>
+            <div class="navbar-nav-center">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="limite.html">Limite Máximo de
+                            Embarque</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="checklist.html">Checklist</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="observações.html">Observações</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="clock me-3">
+                    <span class="hours">00</span>
+                    <span class="divider">:</span>
+                    <span class="minutes">00</span>
+                    <span class="divider">:</span>
+                    <span class="seconds">00</span>
+                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="../index.html">
+                            <i class="bi bi-house text-white" style="font-size: 24px;"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h3 class="text-center p-3">Regra / Mercadoria</h3>
+
+        <h5>Escolta</h5>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <textarea class="form-control" id="texto1" rows="1"
+                        readonly>O Valor da Carga contido em sua Solicitação de Monitoramento, Exige a utilização de Escolta Armada, conforme sua Apólice e Mercadoria escolhida.</textarea>
+                </div>
+            </div>
+            <div class="col-md-2 p-3">
+                <button class="btn btn-primary" onclick="copiarTexto('texto1')">Copiar</button>
+            </div>
+        </div>
+
+        <h5>Isca RF OU Escolta</h5>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <textarea class="form-control" id="texto2" rows="2"
+                        readonly>O Valor da Carga contido em sua Solicitação de Monitoramento, Exige a utilização de 01 ISCA RF camuflada na carga OU Escolta Armada, conforme sua Apólice e Mercadoria escolhida.</textarea>
+                </div>
+            </div>
+            <div class="col-md-2 p-3">
+                <button class="btn btn-primary" onclick="copiarTexto('texto2')">Copiar</button>
+            </div>
+        </div>
+
+        <h5>Imobilizador T4S/3S</h5>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <textarea class="form-control" id="texto3" rows="1"
+                        readonly>O Valor da Carga contido em sua Solicitação de Monitoramento, Exige a utilização de 01 (um) Imobilizador T4S/3S, conforme sua Apólice e Mercadoria escolhida.</textarea>
+                </div>
+            </div>
+            <div class="col-md-2 p-3">
+                <button class="btn btn-primary" onclick="copiarTexto('texto3')">Copiar</button>
+            </div>
+        </div>
+
+        <h5>01(uma) Isca RF</h5>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <textarea class="form-control" id="texto4" rows="1"
+                        readonly>O Valor da Carga contido em sua Solicitação de Monitoramento, Exige a utilização de 01 ISCA RF camuflada na carga, conforme sua Apólice e Mercadoria escolhida.</textarea>
+                </div>
+            </div>
+            <div class="col-md-2 p-3">
+                <button class="btn btn-primary" onclick="copiarTexto('texto4')">Copiar</button>
+            </div>
+        </div>
+
+        <h5>02(duas) Iscas RF E Escolta</h5>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <textarea class="form-control" id="texto5" rows="2"
+                        readonly>O Valor da Carga contido em sua Solicitação de Monitoramento, Exige a utilização de 02 ISCA RF camuflada na carga E Escolta Armada, conforme sua Apólice e Mercadoria escolhida.</textarea>
+                </div>
+            </div>
+            <div class="col-md-2 p-3">
+                <button class="btn btn-primary" onclick="copiarTexto('texto5')">Copiar</button>
+            </div>
+        </div>
+
+        <h5>Escolta - 150km Rio de Janeiro</h5>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <textarea class="form-control" id="texto6" rows="2"
+                        readonly>Com base nos dados de mercadoria inseridos, há exigência para utilização de Escolta Armada (Rastreada) em todos os embarques, quando transportadas dentro do raio de 150 km da Capital do Rio de Janeiro - RJ, conforme sua Apólice.</textarea>
+                </div>
+            </div>
+            <div class="col-md-2 p-3">
+                <button class="btn btn-primary" onclick="copiarTexto('texto6')">Copiar</button>
+            </div>
+        </div>
+
+        <h5>Escolta - Durante o trajeto</h5>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <textarea class="form-control" id="texto7" rows="1"
+                        readonly>Com base nos dados de mercadoria e região inseridos, há exigência para utilização de Escolta Armada Rastreada durante o trajeto, conforme sua Apólice.</textarea>
+                </div>
+            </div>
+            <div class="col-md-2 p-3">
+                <button class="btn btn-primary" onclick="copiarTexto('texto7')">Copiar</button>
+            </div>
+        </div>
+
+        <h5>Isca - Mercadoria / Região</h5>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <textarea class="form-control" id="texto8" rows="1"
+                        readonly>Com base nos dados de mercadoria e região inseridos, há exigência para Implantar 01 (uma) Isca camuflada na carga, conforme sua Apólice.</textarea>
+                </div>
+            </div>
+            <div class="col-md-2 p-3">
+                <button class="btn btn-primary" onclick="copiarTexto('texto8')">Copiar</button>
+            </div>
+        </div>
+
+        <h5>Contigência / Redundância FIXO</h5>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <textarea class="form-control" id="texto9" rows="1"
+                        readonly>Com base nos dados inseridos, há exigência para Rastreamento de Contingência/Redundância FIXO no veículo/carreta, conforme sua Apólice.</textarea>
+                </div>
+            </div>
+            <div class="col-md-2 p-3">
+                <button class="btn btn-primary" onclick="copiarTexto('texto9')">Copiar</button>
+            </div>
+        </div>
+
+        <h5>Iscá Móvel OU Contigência/Redundância FIXA</h5>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <textarea class="form-control" id="texto10" rows="2"
+                        readonly>Com base nos dados de mercadoria e região inseridos, há exigência para Implantar 01 (uma) Isca móvel camuflada na carga/carreta OU um Rastreador de Contingência/Redundância FIXO, conforme sua Apólice.</textarea>
+                </div>
+            </div>
+            <div class="col-md-2 p-3">
+                <button class="btn btn-primary" onclick="copiarTexto('texto10')">Copiar</button>
+            </div>
+        </div>
+
+        <h5>01 (uma) Isca OU Escolta Armada (Rastreada)</h5>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <textarea class="form-control" id="texto11" rows="2"
+                        readonly>Com base nos dados de mercadoria e região inseridos, há exigência para Implantar 01 (uma) Isca camuflada na carga/carreta OU utilização de Escolta Armada (Rastreada), conforme sua Apólice.</textarea>
+                </div>
+            </div>
+            <div class="col-md-2 p-3">
+                <button class="btn btn-primary" onclick="copiarTexto('texto11')">Copiar</button>
+            </div>
+        </div>
+
+        <h5>01 (uma) Isca Tracker OU Escolta Armada (Rastreada)</h5>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <textarea class="form-control" id="texto12" rows="1"
+                        readonly>Com base nos dados de mercadoria inseridos, há exigência para Implantar 01 (uma) Isca Tracker no cavalo OU utilização de Escolta Armada (Rastreada), conforme sua Apólice.</textarea>
+                </div>
+            </div>
+            <div class="col-md-2 p-3">
+                <button class="btn btn-primary" onclick="copiarTexto('texto12')">Copiar</button>
+            </div>
+        </div>
+
+        <h5>Mercadoría PROIBIDA</h5>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <textarea class="form-control" id="texto13" rows="1"
+                        readonly>Sua Solicitação de Monitoramento contém mercadoria PROÍBIDA, conforme sua apólice. Consulte seu corretor.</textarea>
+                </div>
+            </div>
+            <div class="col-md-2 p-3">
+                <button class="btn btn-primary" onclick="copiarTexto('texto13')">Copiar</button>
+            </div>
+        </div>
+
+        <h5>Mercadoría PROIBIDA por Região</h5>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <textarea class="form-control" id="texto14" rows="1"
+                        readonly>Sua Solicitação de Monitoramento contém mercadoria PROÍBIDA para a região selecionada, conforme sua apólice. Consulte seu corretor.</textarea>
+                </div>
+            </div>
+            <div class="col-md-2 p-3">
+                <button class="btn btn-primary" onclick="copiarTexto('texto14')">Copiar</button>
+            </div>
+        </div>
+
+        <h5>Escolta Armada E Isca RF</h5>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <textarea class="form-control" id="texto15" rows="2"
+                        readonly>O Valor da Carga contido em sua Solicitação de Monitoramento, Exige a utilização de ESCOLTA ARMADA e ISCA com Radio Frequencia, devidamente instalada na carga e espelhada para GR, conforme sua Apólice e Perfil Escolhido.</textarea>
+                </div>
+            </div>
+            <div class="col-md-2 p-3">
+                <button class="btn btn-primary" onclick="copiarTexto('texto15')">Copiar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+        </script>
+    <script src="../script.js"></script>
+</body>
+
+</html>

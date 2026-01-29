@@ -1,0 +1,33 @@
+body{
+  background-color: #011F78;
+  color: #ffffff;
+}
+
+.container-fluid img{
+  width: 120px;
+}
+
+/* Relógio Digital */
+.clock {
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.clock span {
+  margin-right: 0.5rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
